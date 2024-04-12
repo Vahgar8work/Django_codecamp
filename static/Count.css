@@ -1,0 +1,13 @@
+div {
+    color : red;
+    background-color: peachpuff;
+    height: fit-content;
+    width: 4.5%;
+}
+
+p {
+    background-color : rgb(50, 50, 50);
+    height: fit-content;
+    color: rgb(159, 198, 232);
+}
+

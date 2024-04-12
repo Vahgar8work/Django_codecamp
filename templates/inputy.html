@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+    <head><title>My first web app</title></head>
+    <body>
+        {%if user.is_authenticated%}
+        <h2>Enter your text below, {{user.username}} : </h2>
+        {% else %}
+        <h2> Enter your text below , my-first-project-viewer :</h2>
+        {%endif%}
+
+<form method="post" action="WordCount">
+    {% csrf_token %}
+    <textarea name="text" id="box" cols="150" rows="10"></textarea><br>
+    <input type = 'submit'>
+</form>
+        
+        <hr>
+        <footer> or go to <a href="index"> Index </a> </footer>
+    </body>
+</html>
